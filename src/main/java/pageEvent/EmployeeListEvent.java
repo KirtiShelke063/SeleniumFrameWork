@@ -8,9 +8,11 @@ import pageObject.EmployeeListPageObject;
 public class EmployeeListEvent {
 
     WebDriver driver;
+
     EmployeeListPageObject employeeList = new EmployeeListPageObject();
 
     public EmployeeListEvent() {
+
         driver = DriverManager.getDriver();
     }
 

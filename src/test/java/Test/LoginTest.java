@@ -10,6 +10,7 @@ public class LoginTest extends baseClass {
 
     @Test
     public void verifyValidLogin() {
+
         LoginPageEvent login = new LoginPageEvent();
         login.login("admin", "password");
     }

@@ -6,7 +6,7 @@ import driver.DriverManager;
 import pageObject.LoginPageObject;
 import utils.WaitUtils;
 
-public class LoginPageEvent{
+public class LoginPageEvent {
 
     private WebDriver driver;
 
@@ -14,10 +14,12 @@ public class LoginPageEvent{
         this.driver = DriverManager.getDriver();
     }
 
-    public void login(String username, String password) {
-
+    public void openLoginPage() {
         WaitUtils.waitForClick(driver, LoginPageObject.LOGIN_LINK);
         driver.findElement(LoginPageObject.LOGIN_LINK).click();
+    }
+
+    public void login(String username, String password) {
 
         WaitUtils.waitForVisibility(driver, LoginPageObject.USERNAME);
         driver.findElement(LoginPageObject.USERNAME).sendKeys(username);

@@ -1,11 +1,11 @@
 package Test;
 
-import org.testng.annotations.Test;
-
 import base.baseClass;
 import pageEvent.CreateEmployeePageEvent;
 import pageEvent.EmployeeListEvent;
 import pageEvent.LoginPageEvent;
+import org.testng.annotations.Test;
+
 
 public class EmployeeTest extends baseClass {
 

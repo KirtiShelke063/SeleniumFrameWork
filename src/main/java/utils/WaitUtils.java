@@ -14,6 +14,7 @@ public final class WaitUtils {
     private WaitUtils() {}
 
     public static void waitForVisibility(WebDriver driver, By locator) {
+
         new WebDriverWait(driver, Duration.ofSeconds(Frameworkconstants.EXPLICIT_WAIT))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
